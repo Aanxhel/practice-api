@@ -1,2 +1,2 @@
-# practis-api-back-db
+# practice-api
 this is a description
