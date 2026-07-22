@@ -1,0 +1,38 @@
+services:
+  database-posgres-practicas:
+    image: postgres:17-trixie
+    container_name: database-posgres-practicas
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: alumnotest
+      POSTGRES_PASSWORD: alumnotest.0000
+      POSTGRES_DB: course_db
+    volumes:
+      - practicas_postgres_data:/var/lib/postgresql/data
+    networks:
+      - practicas_net
+
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: cloudbeaver-practicas
+    restart: always
+    ports:
+      - "8978:8978"
+    volumes:
+      - cloudbeaver_data:/opt/cloudbeaver/workspace
+    depends_on:
+      - database-posgres-practicas
+    networks:
+      - practicas_net
+
+volumes:
+  practicas_postgres_data:
+    name: practicas_postgres_data
+  cloudbeaver_data:
+    name: cloudbeaver_data
+
+networks:
+  practicas_net:
+    name: practicas_net
