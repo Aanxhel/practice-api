@@ -1,0 +1,69 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- CONFIGURACIÓN DE IDIOMA Y MÁRGENES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[left=3cm, right=3cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{float}
+
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% --- METADATOS DE LA PRÁCTICA ---
+\newcommand{\Institucion}{IPN - UPIICSA}
+\newcommand{\Materia}{Desarrollo API Pokemon}
+\newcommand{\TituloPractica}{Practicas creacion full API Back}
+\newcommand{\SubtituloPractica}{Desarrollo de habilidad backend y base de datos}
+
+\newcommand{\Autor}{Aanxhel}
+\newcommand{\Matricula}{101010}
+\newcommand{\Carrera}{Ingeniería Informática}
+\newcommand{\Profesor}{por asignar}
+\newcommand{\SwVersion}{0.1.0}
+\newcommand{\Fecha}{\today}
+
+\begin{document}
+
+% ==========================================
+% PORTADA
+% ==========================================
+\thispagestyle{empty}
+\begin{center}
+    \vspace*{1cm}
+    {\large \Institucion \par}
+    \vspace{0.3cm}
+    {\large \Materia \par}
+
+    \vfill
+    {\Large \TituloPractica \par}
+    \vspace{0.5cm}
+    {\large \bfseries \SubtituloPractica \par}
+    \vfill
+
+    \begin{tabular}{@{}ll@{}}
+      \textbf{Autor/a:} & \Autor \\
+      %\textbf{Matrícula:} & \Matricula \\
+      \textbf{Carrera:} & \Carrera \\
+      %\textbf{Profesor/a:} & \Profesor \\
+      \textbf{Versión:} & \SwVersion \\
+      \textbf{Fecha:} & \Fecha
+    \end{tabular}
+\end{center}
+\clearpage
+
+% ==========================================
+% CONTENIDO DE LA PRÁCTICA
+% ==========================================
+\pagenumbering{arabic}
+
+\input{capitulos/introduccion.tex}
+\input{capitulos/requerimiento.tex}
+\input{capitulos/database_desarrllo.tex}
+\input{capitulos/backend_desarrollo.tex}
+\input{capitulos/conclusiones.tex}
+
+
+\end{document}

@@ -1,0 +1,29 @@
+\section{Introducción}
+
+El desarrollo de software moderno exige un dominio sólido sobre el diseño de la arquitectura, desde la persistencia de los datos hasta la presentación en la interfaz de usuario. Para construir soluciones escalables, limpias y mantenibles, es fundamental integrar de forma robusta la base de datos, la lógica de negocio en el backend y una capa cliente reactiva y modular.
+
+Este proyecto consiste en el desarrollo de una aplicación \textbf{Full Stack} integral para la gestión eficiente de datos, ofreciendo operaciones CRUD (\textit{Create, Read, Update, Delete}) y capacidades para la generación de reportes.
+
+La solución se compone de tres capas principales:
+
+\begin{itemize}
+    \item \textbf{Persistencia y Datos (PostgreSQL):} Modelado de esquemas relacionales utilizando SQL. Se contemplan la definición y estructura de las tablas mediante sentencias \textbf{DDL} (\textit{Data Definition Language}) y el flujo de manipulación de información mediante sentencias \textbf{DML} (\textit{Data Manipulation Language}).
+    
+    \item \textbf{Backend y Lógica de Negocio (Java \& Spring Boot):} Desarrollo estructurado bajo la arquitectura del ecosistema Spring. La lógica del sistema se fundamenta en la aplicación directa de los cuatro pilares de la Programación Orientada a Objetos (\textbf{POO}):
+    \begin{itemize}
+        \item \textbf{Abstracción:} Representación de los elementos del negocio en modelos de datos representativos.
+        \item \textbf{Encapsulamiento:} Protección del estado interno de los objetos y exposición controlada de sus métodos.
+        \item \textbf{Herencia:} Reutilización y jerarquización eficiente de código en entidades y servicios.
+        \item \textbf{Polimorfismo:} Flexibilidad para adaptar comportamientos dinámicos en la capa de servicios e interfaces.
+    \end{itemize}
+
+    \item \textbf{Frontend y Capa del Cliente (Angular):} Implementación de una interfaz de usuario reactiva, modular y basada en componentes. Se encarga de consumir las APIs REST expuestas por Spring Boot, gestionando el estado de la aplicación, el enrutamiento y la experiencia interactiva del usuario final.
+\end{itemize}
+
+\noindent\fbox{%
+    \parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+        \vspace{0.2cm}
+        \small \textbf{Propósito de la Arquitectura:} Esta integración garantiza una estricta separación de responsabilidades, la independencia entre capas y una comunicación sólida y eficiente durante todo el ciclo de vida de los datos.
+        \vspace{0.2cm}
+    }%
+}

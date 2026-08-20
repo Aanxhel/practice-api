@@ -1,0 +1,64 @@
+# ==========================================
+# ARCHIVOS AUXILIARES Y TEMPORALES DE LATEX
+# ==========================================
+
+# Archivos de compilación estándar
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.log
+*.out
+*.run.xml
+*.sbm
+*.sbx
+*.synctex.gz
+*.synctex(busy)
+*.toc
+
+# Listas e índices adicionales
+*.alg
+*.acn
+*.acr
+*.lof
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nlo
+*.nls
+*.vrb
+
+# Archivos generados por paquetes específicos
+*.nav
+*.snm
+*.tdo
+*.upb
+*.upa
+
+# Archivos de respaldo y temporales de editores (Texmaker, TeXstudio, etc.)
+*.bak
+*.sav
+*~
+*.cb
+*.cb2
+
+# Directory listings / cachés
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# SALIDA FINAL (OPCIONAL)
+# ==========================================
+# Por defecto, el PDF generado NO se ignora. 
+# Si prefieres NO guardar el PDF en Git (recomendado si usas CI/CD o prefieres compilarlo siempre):
+# *.pdf
