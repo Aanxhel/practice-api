@@ -13,12 +13,6 @@ services:
     networks:
       - practicas_net
 
-volumes:
-  practicas_postgres_data:
-    name: practicas_postgres_data
-  cloudbeaver_data:
-    name: cloudbeaver_data
-
 networks:
   practicas_net:
     name: practicas_net
